@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lsourtzo.app.book_listing_app.MainActivity">
+
+    <TextView
+        android:id="@+id/wellcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_margin="20dp"
+        android:text="Welcome to a google based book listing app."
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/description_view_back"
+            android:layout_toRightOf="@+id/description_view_back"
+            android:drawSelectorOnTop="true"
+            android:fadeScrollbars="true"
+            android:focusable="false"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/description_view_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ScrollView
+                android:id="@+id/description_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_item_background2"
+                android:fillViewport="true"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_text_view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/ListText"
+                        android:textSize="@dimen/BigTtile"
+                        android:textStyle="bold"
+                        tools:text="Test Talk" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingBottom="10dp">
+
+                            <ImageView
+                                android:id="@+id/categorie_image2"
+                                android:layout_width="140dp"
+                                android:layout_height="180dp"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginTop="1dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/book_stack" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/rounded_frame" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text="Authors"
+                                android:textAlignment="textEnd"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="@color/ListText"
+                                android:textSize="@dimen/smallText"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/title_text_view2_author"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:textAlignment="textEnd"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="@color/ListText"
+                                android:textSize="@dimen/smallText"
+                                tools:text="Amy H. Greene\nGlennon Doyle Melton" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="bottom"
+                                android:text="Publisher"
+                                android:textAlignment="textEnd"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="@color/ListText"
+                                android:textSize="@dimen/smallText"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/default_text_view2_publisher"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="top"
+                                android:textAlignment="textEnd"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="@color/ListText"
+                                android:textSize="@dimen/smallText"
+                                tools:text="Stenhouse Publishers" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="bottom"
+                                android:text="Published Date"
+                                android:textAlignment="textEnd"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="@color/ListText"
+                                android:textSize="@dimen/smallText"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/default_text_view2_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="top"
+                                android:textAlignment="textEnd"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="@color/ListText"
+                                android:textSize="@dimen/smallText"
+                                tools:text="Stenhouse Publishers" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/subtitle_text_view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="bottom"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/ListText"
+                        android:textSize="@dimen/plainText"
+                        tools:text="Integrating Test Preparation Into Reading Workshop!" />
+
+                    <TextView
+                        android:id="@+id/default_text_view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/ListText"
+                        android:textSize="@dimen/plainText"
+                        tools:text="Greene and Melton share their story and proven approach to empower students and raise test scores without compromising good teaching and learning." />
+
+
+                    <ImageView
+                        android:id="@+id/link"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="20dp"
+                        android:drawSelectorOnTop="true"
+                        android:src="@drawable/link"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+        <!-- center message -->
+        <TextView
+            android:id="@+id/errorMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="top"
+            android:padding="20dp"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/ListText"
+            android:textSize="@dimen/plainText"
+            android:visibility="gone"
+            tools:text="error Message" />
+
+        <!-- Loading indicator for user feedback between queries to USGS -->
+        <ProgressBar
+            android:id="@+id/loading_indicator"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</FrameLayout>

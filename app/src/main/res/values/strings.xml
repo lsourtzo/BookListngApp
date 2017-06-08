@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Find a Book</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="doubleClick">Please click back again to exit.</string>
+
+    <string name="type_of_books1">none</string>
+    <string name="type_of_books2">ebooks</string>
+    <string name="type_of_books3">free-ebooks</string>
+    <string name="type_of_books4">full</string>
+    <string name="type_of_books5">paid-ebooks</string>
+    <string name="type_of_books6">partial</string>
+
+    <string name="order_by1">unsorted</string>
+    <string name="order_by2">newest</string>
+    <string name="order_by3">relevance</string>
+
+    <string name="print_type1">all</string>
+    <string name="print_type2">books</string>
+    <string name="print_type3">magazines</string>
+
+    <string name="book_per_page1">10</string>
+    <string name="book_per_page2">20</string>
+    <string name="book_per_page3">30</string>
+    <string name="book_per_page4">40</string>
+    <string name="email">by lsourtzo@gmail.com</string>
+    <string name="show_name">Book Listing</string>
+    <string name="info">The application was created within the framework of the Udacity Training and Goggle:Android Developer Nanodegree Program.\n\nIts a simple app for searching books. To create this app I use the Bokks API of Google, ListAdapter, Fragments, Drawer Menus, the Picasso library to manage the thumbnails and more.\n\nCreated By:\nSourtzopoulos Leonidas\n\nContact email :\nlsourtzo@gmail.com</string>
+    <string name="number_of_books">Number of books per page:</string>
+    <string name="sort_by">Sort By:</string>
+    <string name="type_of_books">Type of books :</string>
+    <string name="print_type">Print type:</string>
+    <string name="filter_options">Filter Options :</string>
+    <string name="show_more">Next page</string>
+
+</resources>
