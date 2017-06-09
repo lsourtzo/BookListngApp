@@ -17,9 +17,6 @@ package com.lsourtzo.app.book_listing_app;
 
 import android.content.AsyncTaskLoader;
 import android.content.Context;
-import android.util.Log;
-import android.view.View;
-import android.widget.TextView;
 
 import java.util.List;
 

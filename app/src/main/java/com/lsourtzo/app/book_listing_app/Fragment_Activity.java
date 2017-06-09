@@ -28,9 +28,6 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.media.CamcorderProfile.get;
-
-
 /**
  * Created by lsourtzo on 14/05/2017.
  */
@@ -73,7 +70,6 @@ public class Fragment_Activity extends Fragment implements LoaderManager.LoaderC
     ProgressBar loadingIndicator;
 
     String DetailsLinkText;
-    private LayoutInflater layoutInflater;
 
     public Fragment_Activity() {
         // Required empty public constructor
@@ -275,10 +271,6 @@ public class Fragment_Activity extends Fragment implements LoaderManager.LoaderC
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
 
-    }
-
-    public LayoutInflater getLayoutInflater() {
-        return layoutInflater;
     }
 
     public void goToNextPage() {

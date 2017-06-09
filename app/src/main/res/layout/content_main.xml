@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|center_vertical"
         android:layout_margin="20dp"
-        android:text="Welcome to a google based book listing app."
+        android:text="@string/WelcomeMessage"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -70,7 +70,7 @@
                         android:textColor="@color/ListText"
                         android:textSize="@dimen/BigTtile"
                         android:textStyle="bold"
-                        tools:text="Test Talk" />
+                        tools:text="@string/test_message1" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -111,7 +111,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="bottom"
-                                android:text="Authors"
+                                android:text="@string/test_message_Authors"
                                 android:textAlignment="textEnd"
                                 android:textAppearance="?android:textAppearanceMedium"
                                 android:textColor="@color/ListText"
@@ -127,14 +127,14 @@
                                 android:textAppearance="?android:textAppearanceMedium"
                                 android:textColor="@color/ListText"
                                 android:textSize="@dimen/smallText"
-                                tools:text="Amy H. Greene\nGlennon Doyle Melton" />
+                                tools:text="@string/test_message_author2" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
                                 android:gravity="bottom"
-                                android:text="Publisher"
+                                android:text="@string/test_message_Publisher1"
                                 android:textAlignment="textEnd"
                                 android:textAppearance="?android:textAppearanceMedium"
                                 android:textColor="@color/ListText"
@@ -151,14 +151,14 @@
                                 android:textAppearance="?android:textAppearanceMedium"
                                 android:textColor="@color/ListText"
                                 android:textSize="@dimen/smallText"
-                                tools:text="Stenhouse Publishers" />
+                                tools:text="@string/test_message_Publisher2" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
                                 android:gravity="bottom"
-                                android:text="Published Date"
+                                android:text="@string/test_message_Publisher_Date1"
                                 android:textAlignment="textEnd"
                                 android:textAppearance="?android:textAppearanceMedium"
                                 android:textColor="@color/ListText"
@@ -175,7 +175,7 @@
                                 android:textAppearance="?android:textAppearanceMedium"
                                 android:textColor="@color/ListText"
                                 android:textSize="@dimen/smallText"
-                                tools:text="Stenhouse Publishers" />
+                                tools:text="@string/test_message_Publisher_Date2" />
 
 
                         </LinearLayout>
@@ -191,7 +191,7 @@
                         android:textAppearance="?android:textAppearanceMedium"
                         android:textColor="@color/ListText"
                         android:textSize="@dimen/plainText"
-                        tools:text="Integrating Test Preparation Into Reading Workshop!" />
+                        tools:text="@string/test_message_Text" />
 
                     <TextView
                         android:id="@+id/default_text_view2"
@@ -201,7 +201,7 @@
                         android:textAppearance="?android:textAppearanceMedium"
                         android:textColor="@color/ListText"
                         android:textSize="@dimen/plainText"
-                        tools:text="Greene and Melton share their story and proven approach to empower students and raise test scores without compromising good teaching and learning." />
+                        tools:text="@string/test_message_Text2" />
 
 
                     <ImageView
@@ -233,7 +233,7 @@
             android:textColor="@color/ListText"
             android:textSize="@dimen/plainText"
             android:visibility="gone"
-            tools:text="error Message" />
+            tools:text="@string/test_message_error1" />
 
         <!-- Loading indicator for user feedback between queries to USGS -->
         <ProgressBar

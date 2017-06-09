@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity
     int Page;
 
     TextView button;
-    //TextView footerButton;
     ImageView sendMailButton;
 
     ScrollView scroll;
@@ -90,11 +89,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         scroll = (ScrollView) findViewById(R.id.description_view);
-
-        //LayoutInflater inflater = (LayoutInflater)this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-       // View view = inflater.inflate(R.layout.content_main, null);
-        //footerButton = (TextView) view.findViewById(R.id.footerMessage);
-        //footerButton.setText("test");
 
         // Set Toolbar
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -150,12 +144,6 @@ public class MainActivity extends AppCompatActivity
                 drawer.closeDrawer(GravityCompat.END);
             }
         });
-
-        //footerButton.setOnClickListener(new View.OnClickListener() {
-        //    public void onClick(View v) {
-        //        Toast.makeText(getBaseContext(), "footer clicked",Toast.LENGTH_LONG).show();
-        //    }
-        //});
 
         // show loading indicator
         ProgressBar loadingIndicator = (ProgressBar) findViewById(R.id.loading_indicator);
@@ -256,7 +244,6 @@ public class MainActivity extends AppCompatActivity
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                // Toast like print
                 queryWord = query;
                 applyNewUrl();
                 if (!searchView.isIconified()) {
@@ -268,7 +255,6 @@ public class MainActivity extends AppCompatActivity
 
             @Override
             public boolean onQueryTextChange(String s) {
-                // UserFeedback.show( "SearchOnQueryTextChanged: " + s);
                 return false;
             }
         });
@@ -277,7 +263,6 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void applyNewUrl() {
-
         Class fragmentClass = null;
         Fragment fragment = null;
 
